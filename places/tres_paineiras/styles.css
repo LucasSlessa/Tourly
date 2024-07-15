@@ -197,7 +197,7 @@ nav {
 }
 
 .booking__form {
-  padding: 2rem;
+  padding: 2em;
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -230,7 +230,7 @@ nav {
 .input__group input {
   display: block;
   width: 100%;
-  max-width: 150px;
+  max-width: 160px;
   padding-block: 5px;
   color: var(--text-dark);
   font-size: 0.9rem;
@@ -241,6 +241,21 @@ nav {
 .input__group input::placeholder {
   color: var(--text-light);
 }
+
+.map-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 100%; /* Proporção 16:9 (calculada dividindo a altura pelo comprimento) */
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 .about__container {
   overflow: hidden;
@@ -543,7 +558,10 @@ nav {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  
 }
+
 
 @media (width > 768px) {
   nav {
@@ -591,6 +609,8 @@ nav {
   .nav__links a:hover::after {
     width: 100%;
   }
+
+  
 
   .about__container {
     grid-template-columns: repeat(2, 1fr);

@@ -8,7 +8,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Web Design Mastery | Rayal Park</title>
+    <link rel="shortcut icon" href="../../favicon.svg" type="image/svg+xml">
+    <title>Tres Paineiras</title>
   </head>
   <body>
     <header class="header">
@@ -27,8 +28,10 @@
           <li><a href="#explore">Galeria</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
-        <a href="../../index.html"><button class="btn nav__btn">Voltar</button></a>
+        <a href="../../index.html" class="btn nav__btn">Voltar</a>
+
       </nav>
+      
       <div class="section__container header__container" id="home">
         <p>Gastronomico - Unico - Agradavel</p>
         <h1>Restaurante<br />TRES <span>PAINEIRAS</span>.</h1>
@@ -40,27 +43,28 @@
         <div class="input__group">
           <span><i class="ri-calendar-2-fill"></i></span>
           <div>
-            <label for="check-in">CHECK-IN</label>
-            <input type="text" placeholder="Check In" />
+            <label for="check-in">SEX-SAB</label>
+            <input type="text" placeholder="12h às 17h - 19h às 22h" />
           </div>
         </div>
         <div class="input__group">
           <span><i class="ri-calendar-2-fill"></i></span>
           <div>
-            <label for="check-out">CHECK-OUT</label>
-            <input type="text" placeholder="Check Out" />
+            <label for="check-out">DOM</label>
+            <input type="text" placeholder="12h às 17h" />
           </div>
         </div>
         <div class="input__group">
-          <span><i class="ri-user-fill"></i></span>
+          <span><i class="ri-restaurant-line"></i></span>
           <div>
-            <label for="guest">GUEST</label>
-            <input type="text" placeholder="Guest" />
+            <label for="guest">Restaurante</label>
+            <input type="text" placeholder="Gastronomico" />
           </div>
         </div>
         <div class="input__group input__btn">
-          <button class="btn">CHECH OUT</button>
+          <a href="#service" class="btn">Localização</a>
         </div>
+      
       </form>
     </section>
 
@@ -69,8 +73,8 @@
         <img src="assets/about.jpg" alt="about" />
       </div>
       <div class="about__content">
-        <p class="section__subheader">ABOUT US</p>
-        <h2 class="section__header">The Best Holidays Start Here!</h2>
+        <p class="section__subheader">Sobre eles</p>
+        <h2 class="section__header">O Melhor dos orgânicos e da brasa!</h2>
         <p class="section__description">
           With a focus on quality accommodations, personalized experiences, and
           seamless booking, our platform is dedicated to ensuring that every
@@ -78,7 +82,7 @@
           excitement.
         </p>
         <div class="about__btn">
-          <button class="btn">Read More</button>
+          <a target="_blank" href="https://api.whatsapp.com/message/4DV6CBA4LWM6E1?autoload=1&app_absent=0"><button class="btn">Contato</button></a>
         </div>
       </div>
     </section>
@@ -150,29 +154,19 @@
     <section class="service" id="service">
       <div class="section__container service__container">
         <div class="service__content">
-          <p class="section__subheader">SERVICES</p>
-          <h2 class="section__header">Strive Only For The Best.</h2>
-          <ul class="service__list">
-            <li>
-              <span><i class="ri-shield-star-line"></i></span>
-              High Class Security
-            </li>
-            <li>
-              <span><i class="ri-24-hours-line"></i></span>
-              24 Hours Room Service
-            </li>
-            <li>
-              <span><i class="ri-headphone-line"></i></span>
-              Conference Room
-            </li>
-            <li>
-              <span><i class="ri-map-2-line"></i></span>
-              Tourist Guide Support
-            </li>
-          </ul>
+          <p class="section__subheader">Localização</p>
+          <h2 class="section__header">Fácil de Chegar.</h2>
+       
+          <!-- Mapa do Google Maps incorporado -->
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d273.15355012784926!2d-45.94057209018196!3d-22.909628352302295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc146847aaaaa9%3A0x667caacaf375faba!2sRancho%20Tr%C3%AAs%20Paineiras!5e0!3m2!1spt-BR!2sbr!4v1721062561460!5m2!1spt-BR!2sbr"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
+    
 
     <section class="section__container banner__container">
       <div class="banner__content">
