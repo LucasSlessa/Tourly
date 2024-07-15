@@ -339,6 +339,7 @@ nav {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 2rem ;
 }
 
 .service__container {
@@ -398,39 +399,16 @@ nav {
   background-color: #ffe4e6;
 }
 
-.banner__content {
-  padding: 2rem;
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  border-radius: 10px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-.banner__card {
-  text-align: center;
-  flex: 1 1 180px;
-}
-
-.banner__card h4 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--text-dark);
-}
-
-.banner__card p {
-  color: var(--text-light);
-}
 
 .explore :is(.section__subheader, .section__header) {
   text-align: center;
   margin-inline: auto;
+  
+
 }
 
 .explore__bg {
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding-block: 3rem;
   display: grid;
   grid-template-columns:
@@ -445,7 +423,7 @@ nav {
 
 .explore__content {
   grid-column: 2/3;
-  max-width: 400px;
+  max-width: 500px;
   padding: 2rem;
   background-color: var(--white);
   border-radius: 5px;
