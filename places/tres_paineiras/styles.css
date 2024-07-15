@@ -504,6 +504,7 @@ nav {
 
 .footer__socials img:hover {
   opacity: 1;
+  transform: scale(1.5);
 }
 
 .footer__bar {
@@ -511,6 +512,18 @@ nav {
   font-size: 0.9rem;
   color: var(--text-light);
   text-align: center;
+}
+.footer_image{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  transition: 0.5s;
+ 
+}
+.footer_image:hover{
+  transform: scale(1.1);
 }
 
 @media (width > 576px) {
